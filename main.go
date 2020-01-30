@@ -1,7 +1,7 @@
 package main
 
 import (
-	"captcha/graph"
+	"ms-captcha/graph"
 )
 
 func main() {

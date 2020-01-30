@@ -1,4 +1,4 @@
-# 图片验证码
+# 图片验证码(captcha)
 
 
 提供图片验证码生成与验证服务。
@@ -10,8 +10,6 @@ docker service update --force --update-parallelism 1 --update-delay 3s --image h
 docker service update  --replicas 3  captcha
 
 ```
-
-
 
 # Change Log
 

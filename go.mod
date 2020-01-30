@@ -1,4 +1,4 @@
-module captcha
+module ms-captcha
 
 go 1.13
 
