@@ -6,8 +6,10 @@ github.com/graphql-go/handler v0.2.3 h1:CANh8WPnl5M9uA25c2GBhPqJhE53Fg0Iue/fRNla
 github.com/graphql-go/handler v0.2.3/go.mod h1:leLF6RpV5uZMN1CdImAxuiayrYYhOk33bZciaUGaXeU=
 github.com/mojocn/base64Captcha v0.0.0-20191203093050-488cc3127d2a h1:RGvPJXp58Q1c8jAK6Ci5I60jfpzHZqeMA+3eGi5IcBw=
 github.com/mojocn/base64Captcha v0.0.0-20191203093050-488cc3127d2a/go.mod h1:wAQCKEc5bDujxKRmbT6/vTnTt5CjStQ8bRfPWUuz/iY=
-github.com/mszsgo/hgraph v0.0.1 h1:stt2AmIhJAtUhFIpWcAGIMrUdslzA4IVFn/JI93w7jw=
-github.com/mszsgo/hgraph v0.0.1/go.mod h1:LhMkiQ0dVXJA0qNj3iVnmA2iRTuw2LbVeEXVXb0dxho=
+github.com/mszsgo/hgraph v0.1.10 h1:9jmoaDXW2uLQK4q+OxZDNI50mO/x1NYrBoiRzfbUnag=
+github.com/mszsgo/hgraph v0.1.10/go.mod h1:OeM+nwr3PX/llVEcMjqdhSolzXmW8ww+DR8RJvRWd/U=
+github.com/mszsgo/hjson v0.0.1 h1:5uzMnrRRd041Wtb081/EnRbBhnShNrFfpp6ZJ06to3g=
+github.com/mszsgo/hjson v0.0.1/go.mod h1:FiOUAaflic7Blf2TZRHC+H3hBAT11RYA3E/ajPJyJTY=
 golang.org/x/image v0.0.0-20190501045829-6d32002ffd75 h1:TbGuee8sSq15Iguxu4deQ7+Bqq/d2rsQejGcEtADAMQ=
 golang.org/x/image v0.0.0-20190501045829-6d32002ffd75/go.mod h1:kZ7UVZpmo3dzQBMxlp+ypCbDeSB+sBbTgSJuh5dn5js=
 golang.org/x/text v0.3.0/go.mod h1:NqM8EUOU14njkJ3fqMW+pc6Ldnwhi/IjpwHt7yyuwOQ=

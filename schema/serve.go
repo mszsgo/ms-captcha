@@ -1,4 +1,4 @@
-package graph
+package schema
 
 import (
 	"context"
@@ -7,6 +7,8 @@ import (
 	"log"
 	"net/http"
 	"runtime"
+
+	"github.com/mszsgo/hgraph"
 )
 
 // Main启动
@@ -49,7 +51,7 @@ type Application struct {
 	Port    int    `json:"port"`
 }
 
-var app = &Application{Name: "captcha", Version: "0.0.1", Host: "0.0.0.0", Port: 7080}
+var app = &Application{Name: "captcha", Version: "0.0.1", Host: "0.0.0.0", Port: 80}
 
 func (app *Application) ListenAndServe() {
 	app.Handles()
@@ -67,10 +69,10 @@ func (app *Application) Handles() {
 		w.Write([]byte("MicroService:" + app.Name))
 	})
 
-	h := GraphqlHttpHandler()
+	h := hgraph.GraphqlHttpHandler(&Query{}, nil)
 	// Graphql服务
 	http.Handle("/graphql", http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-		ctx := context.WithValue(r.Context(), "token", "============================r.Header.Get()")
+		ctx := context.WithValue(r.Context(), "token", r.Header.Get("MS-token"))
 		// token、用户id、用户名等信息存储header，用于记录操作日志
 		h.ContextHandler(ctx, w, r)
 	}))

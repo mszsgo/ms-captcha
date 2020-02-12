@@ -1,9 +1,9 @@
 package main
 
 import (
-	"ms-captcha/graph"
+	"captcha/schema"
 )
 
 func main() {
-	graph.ListenServe()
+	schema.ListenServe()
 }
